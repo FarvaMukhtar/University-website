@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ucp Website</title>
+        
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #rotate{
+	transform:rotate(14deg);
+  margin-top: 40px;
+  justify-content: right;
+  margin-left: 97%;
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  margin-top: 130px;
+  
+  }
+  #apply{
+	transform:rotate(14deg);
+  margin-top: 40px;
+  justify-content: right;
+  margin-left: 93.5%;
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  margin-top: 180px;
+  background-color: rgb(94, 8, 12);
+  color: rgb(252, 252, 252);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 6px;
+  
+  }
+  #cpe{
+	transform:rotate(14deg);
+  margin-top: 40px;
+  justify-content: right;
+  margin-left: 95.8%;
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  margin-top: 130px;
+  background-color: rgb(21, 27, 82);
+  color: rgb(252, 252, 252);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  padding: 6px;
+  border-radius: 6px;
+  
+  }
+  #date{
+	transform:rotate(14deg);
+  margin-top: 40px;
+  justify-content: right;
+  margin-left: 95.1%;
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  margin-top: 130px;
+  background-color: rgb(21, 27, 82);
+  color: rgb(252, 252, 252);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  padding: 6px;
+  border-radius: 6px;
+  
+  }
+  #hostel{
+	transform:rotate(14deg);
+  margin-top: 40px;
+  justify-content: right;
+  margin-left: 95.1%;
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  margin-top: 130px;
+  background-color: rgb(21, 27, 82);
+  color: rgb(252, 252, 252);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  border-radius: 4px;
+  padding: 6px;
+  }
+        .main{
+            background-color: rgb(235, 227, 227);
+            margin-bottom: 70px;
+        }
+        .navbar{
+            border: 1px solid rgb(235, 157, 14);
+            width: 100%;
+            height: 75px;
+            border-radius: 10px;
+        }
+        .Heading {
+            width: 500px;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+        .mainheading{
+            font-size: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color:white ;
+        }
+        .icon{
+            margin-top: -40px;
+            margin-left: -50px;
+        }
+        .topmenu{
+            float: right;
+            width: 50px;
+        }
+        .topmenu ul{
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            float: left;
+        }
+        .topmenu li{
+            font-size: 20px;
+            list-style-type: none;
+            font-style: bold;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: -50px;
+        }
+        .topmenu li a{
+            text-decoration:none;
+            color: white;
+        }
+        .topmenu li a:hover{
+            text-decoration: none;
+            color: rgb(10, 10, 10);
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 8vh;
+            background-color: teal;
+            font-family: "Montserrat", sans-serif;
+        }
+        .mainslider{
+            width: 100%;
+            height: 600px;
+            background-image: url(ucp1.jpg);
+            animation: slider 20s infinite linear;
+        }
+        @keyframes slider{
+            0%{background-image: url(ucp2.jpg);}
+            35%{background-image: url(ucp3.jpg);}
+            75%{background-image: url(ucp5.jpg);}
+        }
+        .sndpart{
+            margin-left: 60px;
+        }
+        .Sndheading{
+            font-size: 35px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color:rgb(10, 10, 51) ;
+            margin-top: 35px;
+            
+        }
+        .rowimages{
+            
+            margin-top: 35px;
+            margin-left: 30px;   
+        }
+        .columnimages{
+            
+            max-width: 20%; /* Adjust as needed */
+            height: auto;
+        }
+        .btn{
+            margin-top: 20px;
+            margin-left: 550px;
+            border-radius: 4px;
+            font-size: 22px;
+            padding: 13px;
+            color: rgb(251, 253, 255);
+            background-color: rgb(6, 29, 49);
+        }
+        .trdheading{
+            margin-left: 60px;
+            color: rgb(3, 3, 36);
+            font-size: 35px;
+            font-style:oblique;
+            margin-top: 85px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .aftrthrd{
+            margin-left: 60px;
+            margin-top: 35px; 
+             
+        }
+        .inputStype{
+            padding: 15px;
+            font-size: 17px;
+            width: 40%;
+            background-color: rgb(245, 243, 240);
+            border-radius: 4px;
+            color: rgb(110, 116, 116); 
+        }
+            #search-button {
+                padding: 18px 60px;
+                font-size: 16px;
+                background-color:rgb(55, 54, 94);
+                color: rgb(252, 250, 250);
+                border-radius: 4px;
+                margin-top: -256px;
+                margin-left: 900px;
+               
+    
+            }
+        .both{
+            font-size: 12px;
+            margin-top: -56px;
+            margin-left: 580px;
+        }
+        
+        .aboutfaculty{
+            font-size: 20px;
+            color: rgb(3, 3, 61);
+            margin-left: 60px;
+            margin-top: 35px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .row {
+            margin-top: 35px;
+            margin-left: 60px;
+            margin-right: 60px;
+            display: flex;
+            justify-content: space-between; 
+        }
+        .image{
+            max-width: 19%; /* Adjust as needed */
+            height: auto;
+        }
+        .rowimages{
+            margin-top: 18px;
+            margin-left: -340px;
+            margin-right: 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .imageo{
+            max-width: 35%; /* Adjust as needed */
+            height: 350px;
+        }
+        .imagetw{
+            max-width: 100%; /* Adjust as needed */
+            height: 175px;
+            margin-left: 20px;
+        }
+        .imageth{
+            max-width: 100%; /* Adjust as needed */
+            height: 175px;
+            margin-left: 20px;
+        }
+        .banner{
+            background-color: #0a3450;
+            color: rgb(255, 255, 255);
+            padding: 80px;
+            text-align: left;
+            margin-top: 35px;  
+        }
+        .chairmn{
+            margin-left: 150px ;
+            font-size: 60px;
+        }
+        .chp{
+            margin-top: -100px;
+            margin-left: 150px ;
+            font-size: 20px;
+        }
+        .chpara{
+            margin-left: 150px ;
+            font-size: 20px;
+        }
+        .chppp{
+            margin-top: 35px;
+            font-size: 20px;
+            margin-left: 150px ;
+        }
+        .chpppa{
+            margin-top: 3px;
+            font-size: 14px;
+            margin-left: 150px ;
+        }
+        .imagech{
+            max-width: 10%; /* Adjust as needed */
+            height: auto;
+            border-radius: 50px;
+            margin-left: -30px;
+        }
+        .frhead{
+            font-size: 40px;
+            text-align: center;
+            color: #0b202e;
+            margin-top: 28px;
+        }
+        
+        .imageic{
+            justify-content: space-between;
+            margin-top: 90px;
+            margin-left: 250px ;
+        }
+        .fthheading{
+            font-size: 35px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color:rgb(10, 10, 51) ;
+            margin-top: 35px;
+            margin-left: 50px;
+            
+        }
+        .maiiin{
+            background-color: rgb(235, 227, 227);
+            height: 300px;
+            margin-bottom: 50px;
+            
+        }
+        .sthheading{
+            font-size: 40px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color:rgb(10, 10, 51) ;
+            margin-top: 35px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+        footer {
+            background-color: #2a1e57;
+            color: #fdfbfb;
+            height: auto;
+            width: 100vw;
+            padding-top: 40px;
+            position: absolute;
+            text-align: center;
+            padding: 10px;
+        }
+        .footer-1sthead{
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            flex-direction: column;
+            text-align: left;
+        }
+        .footer-1sthead h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 160;
+    text-transform: capitalize;
+    line-height: 3rem;
+        }
+    .icon-list{
+        top: 20%;
+        justify-content: right;
+        transform: translate(-50%,-50%);
+        position: absolute;
+    }
+    .maiiiin{
+            background-color: rgb(235, 227, 227);
+            height: 600px;
+            margin-bottom: 50px;
+            
+        }
+        .comheading{
+            font-size: 40px;
+            color: #2a1e57;
+            margin-top: 30px;
+            margin-left: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .gal1{
+            max-width: 50%;
+            height: 500px;
+            margin-left: 50px;
+            border: #54419b;
+        }
+        .columimages{
+            display: inline-block;
+        }
+        .gal3{
+            max-width: 100%;
+            height: 242px;
+            margin-left: 10px;
+            margin: 10px;
+           
+        }
+        .gal4{
+            max-width: 100%;
+            height: 242px;
+            margin-left: 10px;
+               
+        }
+        .list{
+            display: flex;
+            margin: 10px;
+            color: #2a1e57;
+            ;
+            
+        }
+        .list li{
+            padding: 6px;
+            
+        }
+        .fcbicon{
+            width: 40px;
+            border-radius: 30px;
+        }
+        .twittericon{
+            width: 40px;
+            border-radius: 30px;
+        }
+        .youicon{
+            width: 40px;
+            border-radius: 30px;
+        }
+        .linkedicon{
+            width: 40px;
+            border-radius: 30px;
+        }
+        .instaicon{
+            width: 40px;
+            border-radius: 30px;
+        }
+        #ftlogo{
+            max-width: 20%;
+            height: 100px;
+        }
+        .snd ul {
+    
+    margin-top: 10px;
+     
+     
+  }
+  .snd li{
+    margin-top: 2px;
+  }
+  .snd li h{
+    margin-left: -10%;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -50px;
+  }
+  #footsnd{
+    margin-left: -10%;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  .trd ul {
+    margin-left: 50%;
+    margin-top: 10px;
+     
+  }
+  #foottrd{
+    margin-left: 50%;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: inherit;
+  }
+    
+
+
+
+
+
+
+
+
+        
+
+
+
+        
+
+    </style>
+    <body>
+        
+        <div class="main">
+            
+            <nav>
+                <div class="navbar">
+                    
+                
+                    <div class="Heading">
+                        <h1 class="mainheading">University of Central Punjab</h1>
+                        <div class="icon">
+                            <img src="123.png"
+                            width="50px">  
+                        </div>
+                        <div class="topmenu">
+                            <ul>
+                                <li><a href="#">Academics</a></li>
+                                <li><a href="#">Admissions</a></li>  
+                                <li><a href="#">About </a></li>
+                                <li><a href="#">UCP Online</a></li>
+                                <li><a href="#">My UCP</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Research</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="mainslider">
+                <div class="button-container">
+                    <input type="button" value="Apply Online" id="apply" />    
+                </div>
+                <div class="button-container">
+                    <input type="button" value="UCP-CPE" id="cpe" />    
+                </div>
+                <div class="button-container">
+                    <input type="button" value="Date-Sheets" id="date" />    
+                </div>
+                <div class="button-container">
+                    <input type="button" value="Girls-Hostels" id="hostel" />    
+                </div>
+            </div>
+            
+           <div class="sndpart">
+             <h2 class="Sndheading">In The Moment</h2>
+             <div class="rowimages">
+                
+                    <img class="imageo" src="2nd1partt.jpg" alt="Natural">
+                
+                <div class="columnimages">
+                <img class="imagetw" src="2nd2partt.jpg" alt="Naturalclr">
+                    
+                    <div class="columnnn">
+                        <img class="imageth"src="2nd3partt.png" alt="treee">
+                    </div>
+                
+                </div>
+             </div>
+           </div>
+           <button class="btn">More UCP News</button>
+
+           <h3 class="trdheading">Find a Course</h3>
+           <div class="aftrthrd">
+            <input class="inputStype" type="text" placeholder="Enter a Course name or Keyword here">
+            <div class="both">
+                <h1 id="input">Undergraduate Courses</h1>
+                <h1 id="input">Postgraduate Courses</h1>
+            </div>
+            <button id="search-button">Search</button>
+           </div>    
+             <div class="aboutfaculty">
+                <p>Faculty of Pharmaceutical Sciences | Faculty of Languages & Literature | Faculty of Information Technology and Computer Science |</p>
+                   <p> Faculty of Engineering | Faculty of Media and Mass Communication | Faculty of Humanities & Social Science | Faculty of Science and Technology |</p>
+                    <p>Faculty of Management Science | Faculty of Law</p>
+             </div> 
+             
+                <div class="row">
+                    <img class="image" src="engg.webp" alt="enginer">
+                    <img class="image" src="manag.webp" alt="manag">
+                    <img class="image" src="media.webp" alt="media">
+                    <img class="image" src="pharm.webp" alt="pharm">
+                    <img class="image" src="sctech.webp" alt="sctech">
+                 </div>
+                 <div class="rowimages">
+                    <img class="image" src="engg.webp" alt="enginer">
+                    <img class="image" src="manag.webp" alt="manag">
+                    <img class="image" src="media.webp" alt="media">
+                    <img class="image" src="pharm.webp" alt="pharm">
+                    <img class="image" src="sctech.webp" alt="sctech">
+                 </div>
+                 <div class="banner">
+                    <h1 class="chairmn">Chairman's Message</h1>
+                    
+                        <img class="imagech" src="chiarmain.webp" alt="chrmn">
+
+                        <p class="chp">"We aim to make our students adaptable to change so that they may thrive in a rapidly evolving job market;</p> 
+                     <p class="chpara">critical thinkers to be able to identify problems in our society and; creative to come up with pragmatic</p>
+                       <p class="chpara">solutions."</p>
+
+                        <p class="chppp">Mian Amer Mahmood</p>
+                        <p class="chpppa">Chairman, UCP</p>
+                    
+                  </div>
+             
+             
+        </div>
+        
+        <h1 class="frhead">About UCP</h1>
+        <div class="images">
+            <img class="imageic" src="book.webp" alt="book">
+            <img class="imageic" src="bookk.webp" alt="bookk">
+            <img class="imageic" src="deg.webp" alt="deg">
+            
+        </div>
+        <div class="images">
+            <img class="imageic" src="deg.webp" alt="book">
+            <img class="imageic" src="book.webp" alt="bookk">
+            <img class="imageic" src="bookk.webp" alt="deg">
+        </div>
+        <div class="images">
+            <img class="imageic" src="book.webp" alt="book">
+            <img class="imageic" src="bookk.webp" alt="bookk">
+            <img class="imageic" src="deg.webp" alt="deg">
+        </div>
+        <div class="images">
+            <img class="imageic" src="book.webp" alt="book">
+            <img class="imageic" src="deg.webp" alt="bookk">
+            <img class="imageic" src="book.webp" alt="deg">
+        </div>
+        <div class="images">
+            <img class="imageic" src="bookk.webp" alt="book">
+            <img class="imageic" src="book.webp" alt="bookk">
+            <img class="imageic" src="deg.webp" alt="deg">
+        </div>
+        <div class="images">
+            <img class="imageic" src="book.webp" alt="book">
+            <img class="imageic" src="bookk.webp" alt="bookk">
+            <img class="imageic" src="deg.webp" alt="deg">
+        </div>
+
+        <div class="maiiin">
+            <h1 class= "fthheading">CPE</h1>
+            <div class="row">
+                <img class="image" src="engg.webp" alt="enginer">
+                <img class="image" src="manag.webp" alt="manag">
+                <img class="image" src="media.webp" alt="media">
+                <img class="image" src="pharm.webp" alt="pharm">
+                <img class="image" src="sctech.webp" alt="sctech">
+             </div>
+        </div>
+
+        <h1 class="sthheading">Key Highlights 2022</h1>
+
+        <div class="maiiiin">
+            <h1 class= "comheading">Our Community</h1>
+                
+                <div class="comimages">
+                   
+                       <img class="gal1" src="gallery1.webp" alt="galler1">
+                   
+                   <div class="columimages">
+                   <img class="gal3" src="Gallery3.webp" alt="gallery2">
+                       
+                       <div class="columnnn">
+                           <img class="gal4"src="Gallery4.webp" alt="gallery3">
+                       </div>
+                   
+                   </div>
+
+                   <div class="columimages">
+                    <img class="gal3" src="Gallery4.webp" alt="galler4">
+                        
+                        <div class="columnnn">
+                            <img class="gal4"src="Gallery3.webp" alt="gallery5">
+                        </div>
+                    
+                    </div>
+                </div>
+              
+        </div>
+
+        <footer>
+            <div class="social-footer">
+                <div class="footer-1sthead">
+                    <img src="footlogof.png" id="ftlogo" alt="footrlogo">
+                    <div class="icon">
+                        <img src="123.png"
+                        width="50px"> 
+                     </div>
+                </div>
+                
+                <ul class="list">
+                    <li><img class="fcbicon"src="fcb.png" alt="fb"></li>
+                    <li><img class="linkedicon"src="linked.png" alt="linked"></li>
+                    <li><img class="instaicon"src="insta.jpg" alt="insta"></li>
+                    <li><img class="youicon"src="youtube.png" alt="youtube"></li>
+                    <li><img class="twittericon"src="twitt.png" alt="twitter"></li>
+                </ul> 
+
+                <ul class="list">
+                    <li><img class="fcbicon"src="fcb.png" alt="fb"></li>
+                    <li><img class="linkedicon"src="linked.png" alt="linked"></li>
+                    <li><img class="instaicon"src="insta.jpg" alt="insta"></li>
+                    <li><img class="youicon"src="youtube.png" alt="youtube"></li>
+                    
+                </ul> 
+                <div class="snd">
+                    <h id="footsnd">USEFUL LINKS</h>
+                    <ul>
+                        <li><h>Student Portal</h> </li>
+                        <li><h>Acedemic Calendar</h> </li>
+                        <li><h>Exam Office</h> </li>
+                        <li><h>Sustainability</h> </li>
+                        <li><h>Harrassment Policy</h> </li>
+                        <li><h>Schalorships</h> </li>
+                        <li><h>Jobs</h> </li>
+                        <li><h>Tender Notice</h> </li>
+                        <li><h>Rehnumai Markaz Portal</h> </li>
+                        <li><h>FAQs</h> </li>
+                    </ul>
+        
+                    <div class="trd">
+                        <h id="foottrd">Contact Us</h>
+                    <ul>
+                        <li><h>1 - Khayaban-e-Jinnah Road, Johar Town, Lahore.</h> </li>
+                        <li><h> Phone: +92-42-35880007</h> </li>
+                        <li><h>(+92) 80-000-827 (9:00AM to 5:00PM)</h> </li>
+                        <li><h>Fax: +92-42-35954892/h> </li>
+                        <li><h>Email: info@ucp.edu.pk</h> </li>
+                        
+                    </ul>
+                    </div>
+                </div>
+
+
+                
+
+                
+                
+            </div>
+            
+          </footer>
+        
+    </body>
+</html>
